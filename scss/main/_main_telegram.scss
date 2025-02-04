@@ -1,0 +1,96 @@
+.telegram {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 4rem;
+   color:  #229ED9;
+   position: fixed;
+   right: 50px;
+   bottom: 50px;
+   z-index: 2;
+   background-color: white;
+   border-radius: 100%;
+   width: 60px;
+   height: 60px;
+   animation: waves-telegram linear 3s infinite;
+   & a,
+   & a:visited {
+      color:  #229ED9;
+   }
+   &--message {
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      position: absolute;
+      right: 3px;
+      top: 0;
+      border-radius: 50%;
+   }
+   .fa-telegram {
+      animation: 1.5s linear infinite animat;
+   }
+  /*  @keyframes animat {
+      0% {
+         transform: rotate(-20deg);
+      }
+      20% {
+         transform: rotate(0deg);
+      }
+      40% {
+         transform: rotate(-20deg);
+      }
+      60% {
+         transform: rotate(0deg);
+      }
+      80% {
+         transform: rotate(-20deg);
+      }
+      100% {
+         transform: rotate(0deg);
+      }
+   } */
+   @keyframes animat {
+      0% {
+          transform: rotate(0) skew(0.017rad);
+      }
+      
+      25% {
+          transform: rotate(0) skew(0.017rad);
+      }
+      35% {
+          transform: rotate(-0.3rad) skew(0.017rad);
+      }
+      45% {
+          transform: rotate(0.3rad) skew(0.017rad);
+      }
+      55% {
+          transform: rotate(-0.3rad) skew(0.017rad);
+      }
+      65% {
+          transform: rotate(0.3rad) skew(0.017rad);
+      }
+      75% {
+          transform: rotate(0) skew(0.017rad);
+      }
+      100% {
+          transform: rotate(0) skew(0.017rad);
+      }
+   }
+   @keyframes waves-telegram {
+      0% {
+         box-shadow: 0 8px 10px rgba(0, 136, 204, 0.3), 0 0 0 0 rgba(0, 136, 204, 0.2), 0 0 0 0 rgba(0, 136, 204, 0.2);
+     }
+     
+     40% {
+         box-shadow: 0 8px 10px rgba(0, 136, 204, 0.3), 0 0 0 35px rgba(0, 136, 204, 0.2), 0 0 0 0 rgba(0, 136, 204, 0.2);
+     }
+     
+     80% {
+         box-shadow: 0 8px 10px rgba(0, 136, 204, 0.3), 0 0 0 55px rgba(0, 136, 204, 0), 0 0 0 26.7px rgba(0, 136, 204, 0.067);
+     }
+    
+     100% {
+         box-shadow: 0 8px 10px rgba(0, 136, 204, 0.3), 0 0 0 80px rgba(0, 136, 204, 0), 0 0 0 40px rgba(0, 136, 204, 0.0);
+     }
+   }
+}

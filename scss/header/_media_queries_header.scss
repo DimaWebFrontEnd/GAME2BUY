@@ -1,0 +1,154 @@
+    
+@media screen and (max-width: 950px) {
+   header {
+      padding-inline: 0;
+   }
+   /*
+      !Burger Menu
+   */
+   .burgerbtn {
+      display: flex;
+   }
+   /*
+      !Shop Name
+   */
+   .header__shop--name {
+      display: block;
+   }
+   /*
+      !Catalog
+   */
+   .header__catalog {
+      display: none;
+   }
+   /*
+      !SearchBar
+   */
+   .header__searchbar--submit {
+      display: none;
+   }
+   /*
+      !Contacts 
+   */
+   .telephone__contacts {
+      display: none;
+   }
+   .telephone i:nth-child(3) {
+      margin-left: 0;
+   }
+   .telephone i:nth-child(4) {
+      margin-left: 0;
+   }
+
+   /*
+      !Main Consoles
+   */
+   .main__consoles {
+      flex-direction: column;
+
+      & .console__names {
+         /* display: block; */
+         display: flex !important;
+         /* align-items: center; */
+         /* border-radius: 0 !important; */
+         padding-top: 20px;
+         /* padding-left: 10px; */
+         height: 60px;
+         /* margin-top: 20px;
+         margin-bottom: 20px; */
+         /* border: 1px solid red; */
+      }
+      & div {
+         /* border-radius: 0 !important; */
+         margin-inline: 0 !important;
+      }
+   }
+   /* .main__consoles div {
+      border-radius: 0 !important;
+   } */
+   #names__consoles {
+      display: none;
+   }
+}
+@media screen and (max-width: 550px) {
+   /*
+      !Main
+   */
+   body main {
+      padding-inline: 0;
+   }
+   /*
+      !Swiper
+   */
+   .main__wrap--slider .swiper {
+      height: 400px;
+      /* min-height: 400px; */
+      border-radius: 0;
+   }
+   /*
+      !SearchBar
+   */
+   .header__searchbar--form {
+      display: none;
+   }
+   .header__searchbar .fa-magnifying-glass {
+      color: white;
+      font-size: 1.6rem;
+      /* font-size: 1.6rem; */
+      left: 100%;
+   }
+   /*
+      !Contacts 
+   */
+   .telephone {
+      margin-left: 30px;
+   }
+   /* 
+      !Main Banner
+   */
+   .main__banner {
+      /* margin-right: 140px; */
+      background-color: dodgerblue;
+   }
+}
+
+
+@media screen and (max-width: 500px) {
+   .header__searchbar--form {
+      width: 160px;
+      height: 30px;
+   }
+   .header__searchbar--submit {
+      width: 60px;
+      height: 30px;
+   }
+ /*   i {
+      font-size: 1.2rem;
+      margin-inline: 5px;
+   } */
+}
+
+
+
+@media screen and (max-width: 370px) {
+   .header__searchbar input::placeholder {
+      margin: 0;
+      padding: 0;
+   }
+   .header__searchbar--form {
+      /* width: 130px; */
+      height: 25px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+   }
+   .header__searchbar--submit {
+      width: 30px;
+      height: 25px;
+      display: none;
+      & span {
+         display: none;
+      }
+     
+   }
+}

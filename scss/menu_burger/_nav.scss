@@ -1,0 +1,97 @@
+/* .header__navmenu {
+   display: none;
+} */
+
+.navmenu__bg {
+   display: none;
+   position: fixed;
+   top: 70px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: hsla(0, 0%, 0%, 0.75);
+   filter: blur(10px);
+   z-index: 2;
+}
+.navmenu__bg.active {
+   display: block;
+}
+nav h1, nav i {
+   font-size: 1.1rem;
+   font-weight: normal;
+   text-transform: uppercase;
+}
+
+
+nav li {
+   list-style-type: none;
+   border: 1px solid transparent;
+   padding: 0.25rem 0.5rem;
+   margin: 5px;
+}
+
+nav li:hover {
+   border: 1px solid whitesmoke;
+   border-radius: 5px;
+}
+
+nav li a {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+nav a {
+   display: block;
+   text-decoration: none;
+   color: white; 
+   line-height: 2;
+}
+nav a:hover {
+   color: dodgerblue;
+   transition: all 0.5s ease;
+}
+
+.navmenu__game-consoles {
+   display: none;
+   background-color: #262626;
+   position: fixed;
+   top: 120px;
+   left: 250px;
+   border-left: 1px solid whitesmoke;
+}
+
+:is(.navmenu__consoles:hover, .navmenu__consoles:focus-within) .navmenu__game-consoles {
+   display: block;
+}
+
+.navmenu__games-right {
+   display: none;
+   background-color: #262626;
+   position: fixed;
+   top: 170px;
+   left: 250px;
+   border-left: 1px solid whitesmoke;
+}
+
+:is(.navmenu__games:hover, .navmenu__games:focus-within) .navmenu__games-right {
+   display: block;
+}
+
+.navmenu__accessories-right {
+   display: none;
+   background-color: #262626;
+   position: fixed;
+   top: 215px;
+   left: 250px;
+   border-left: 1px solid whitesmoke;
+}
+
+:is(.navmenu__accessories:hover, .navmenu__accessories:focus-within) .navmenu__accessories-right {
+   display: block;
+}
+
+nav .fa-telegram {
+   font-size: 1.5rem;
+}
+

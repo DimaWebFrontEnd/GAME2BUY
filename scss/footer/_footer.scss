@@ -1,0 +1,105 @@
+footer {
+   background-color: black;
+   height: 100%;
+
+   /* position: absolute; */
+   bottom: 0;
+   margin-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   padding: 15px 30px;
+   width: 100%;
+   @media screen and (max-width: 550px) {
+      padding-left: 0;
+      padding-right: 0;
+   }
+   .footer__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 1440px;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      position: relative;
+      @media screen and (max-width: 1050px) {
+         /* justify-content: center; */
+         text-align: center;
+      }
+      @media screen and (max-width: 900px) {
+         flex-direction: column;
+         padding-left: 0;
+         padding-right: 0;
+      }
+     /*  div {
+         @media screen and (max-width: 900px) {
+            width: calc((100 - 51px) / 2);
+         }
+      } */
+      & p {
+         text-transform: uppercase;
+         font-size: 0.8rem;
+         color: dodgerblue;
+         @media screen and (max-width: 1000px) {
+            font-size: .75rem;
+         }
+      }
+      & i {
+         font-size: 3rem;
+         @media screen and (max-width: 1000px) {
+            font-size: 2.5rem;
+         }
+      }
+      
+      & div {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         row-gap: 20px;
+         margin-bottom: 15px;
+         /* padding: 15px; */
+      }
+     /*  & div:last-child {
+         margin: 0;
+      } */
+      &--social {
+         /* margin: 0; */
+         /* border: 1px solid white; */
+         justify-content: flex-start;
+         position: relative;
+         height: 84px;
+         width: 100%;
+         max-width: 166px;
+         .fa-instagram,
+         .fa-square-facebook {
+            color: gray;
+         }
+         .fa-telegram {
+            color: white;
+         }
+         &--social i {
+            font-size: 2rem;
+         }
+        
+         .social__media {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+         }
+         & p {
+           position: absolute;
+           bottom: 0;
+         }
+      }
+      @media screen and (max-width: 950px) {
+         &:nth-child(3) {
+            display: none;
+         }
+      }
+   }
+}
+

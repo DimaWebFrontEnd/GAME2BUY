@@ -1,0 +1,151 @@
+.header__icons {
+   font-size: 1.5rem;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   position: relative;
+   flex: 1 1 auto;
+   /* border: 1px solid red; */
+   i {
+      color: white;
+      font-size: 1.5rem;
+      margin-inline: 10px;
+      cursor: pointer;
+   }
+  
+   .fa-magnifying-glass:hover {
+      color: dodgerblue;
+   }
+   & .search__icon {
+      display: none;
+      align-items: center;
+      cursor: pointer;
+      @media screen and (max-width: 600px) {
+         display: flex;
+      }
+      .fa-chevron-down {
+         font-size: 0.8rem;
+         display: block;
+         margin: 0;
+      }
+      .fa-chevron-down.noactive {
+         display: none;
+      }
+      .fa-chevron-up {
+         font-size: 0.8rem;
+         display: none;
+         margin: 0;
+      }
+      .fa-chevron-up.on {
+         display: block;
+      }
+   }
+   .telephone {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      /* 
+         !Media Queries 950px
+      */
+      @media screen and (max-width: 950px) {
+         &__contacts {
+            display: none;
+         }
+         & i:nth-child(3) {
+            margin-left: 0;
+         }
+         & i:nth-child(4) {
+            margin-left: 0;
+         }
+      
+      }
+      /* 
+         !Media Queries 550px 
+      */
+      @media screen and (max-width: 550px) {
+         /* & {
+            margin-left: 30px;
+         } */
+      }
+      &__contacts {
+         font-weight: lighter; 
+         font-size: 1rem;
+      }
+  
+      .fa-chevron-down {
+         font-size: 0.8rem;
+         display: block;
+      }
+      .fa-chevron-down.noactive {
+         display: none;
+      }
+      .fa-chevron-up {
+         font-size: 0.8rem;
+         display: none;
+      }
+      .fa-chevron-up.on {
+         display: block;
+      }
+      &--work-time {
+         display: none;
+         font-size: 1.2rem;
+         position: absolute;
+         top: 50px;
+         right: 0;
+         color: black;
+         background-color: white;
+         padding: 20px 40px;
+         /* border: 1px solid #262626; */
+         border-radius: 10px;
+         box-shadow: 0px 5px 5px 0px;
+         cursor: default;
+         & p {
+            font-size: 0.7rem;
+         }
+      }
+      &--work-time.active {
+         display: block;
+      }
+   }
+   &--cart {
+      position: relative;
+   }
+   
+  
+
+   .cartAmount {
+      /* background: #cd3d0f; */
+      position: absolute;
+      top: -10px;
+      right: 3px;
+      background-color: dodgerblue;
+      border-radius: 0.625rem;
+      color: #fff;
+      font-family: SSTPro-Roman,sans-serif;
+      font-size: 12px;
+      font-size: .75rem;
+      font-weight: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      font-style: normal;
+      font-stretch: normal;
+      height: 20px;
+      height: 1.25rem;
+      /* left: -5px;
+      left: -0.3125rem;
+      position: absolute; */
+      text-align: center;
+      /* top: -5px;
+      top: -0.3125rem; */
+      width: 20px;
+      width: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+}
+
+
+

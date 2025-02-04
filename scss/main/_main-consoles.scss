@@ -1,0 +1,248 @@
+.main__consoles {
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   margin-top: 20px;
+   flex-wrap: wrap;
+   /* padding-inline: 20px; */
+   gap: 20px;
+   
+   & div {
+      overflow: hidden;
+      cursor: pointer;
+      /* width: 100%; */
+      width: calc((100% - 61px) / 4);
+      /* max-width: 335px; */
+      /* height: 100vh; */
+      height: 100%;
+      max-height: 335px;
+      /* height: 250px; */
+      /* margin-inline: 10px; */
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      /* object-fit: cover; */
+      @media screen and (max-width: 1050px) {
+         width: calc((100% - 15px) / 4);
+      }
+   }
+   div:first-child {
+      margin-left: 0;
+      /* background-color: dodgerblue; */
+      
+   }
+   & div:nth-child(5) {
+      margin-right: 0;
+   }
+   
+   & .console__names {
+      display: block;
+   }
+   &--playstation {
+      background-color: white;
+      /* border: 1px solid red; */
+      /* border-radius: 15px; */
+   }
+   &--playstation img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      /* border-radius: 15px; */
+      scale: 1.05;
+   }
+   
+   &--playstation img:hover {
+      transition: all 0.3s ease;
+      scale: 1.1;
+   }
+   &--xbox {
+      position: relative;
+      background-color: whitesmoke;
+      h2 {
+         position: absolute;
+         bottom: 15px;
+         left: 50%;
+         transform: translateX(-50%);
+         color: green;
+         text-shadow: 2px 2px 5px #000;
+      }
+   }
+   &--xbox img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 15px;
+   }
+   &--xbox img:hover {
+      transition: all 0.3s ease;
+      scale: 1.08;
+   }
+   &--switch {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      /* background-color: red; */
+      border-radius: 15px;
+      h2 {
+         color: white;
+      }
+   }
+   &--switch img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 15px;
+   }
+   &--switch img:hover {
+      transition: all 0.3s ease;
+      scale: 1.08;
+   }
+   &--steamdeack {
+      display: flex;
+      flex-direction: column;
+      /* flex: 1 1 auto; */
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      /* min-height: 335px; */
+      height: 100%;
+      max-height: 100vh;
+   }
+   &--steamdeack img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
+   &--steamdeack:hover img {
+      transition: all 0.3s ease;
+      scale: 1.08;
+   }
+        /* 
+         !Media Queries 950px
+      */
+
+      @media screen and (max-width: 1050px) {
+         & {
+            /* margin-top: 5px; */
+            margin: 5px;
+            gap: 5px;
+         }
+      }
+      @media screen and (max-width: 600px) {
+         & {
+            flex-wrap: wrap;
+            justify-content: space-between;
+         }
+         & div {
+            /* flex-wrap: wrap; */
+            width: calc((100% - 5px)/ 2);
+            
+            
+         }
+      }
+      /* @media screen and (max-width: 950px) {
+         & {
+            flex-direction: column;
+            padding-inline: 20px;
+            & .console__names {
+               display: flex;
+               height: 60px;
+               padding-top: 20px;
+            }
+            & div {
+               margin-inline: 0;
+            }
+         }
+      } */
+}
+
+/* 
+   !Media Queries 950px For #names__consoles
+*/
+@media screen and (max-width: 600px) {
+   #names__consoles {
+      display: none;
+   }
+}
+
+
+/* .main__consoles div {
+   width: 100%;
+   max-width: 500px;
+   height: 250px;
+   
+   margin-inline: 10px;
+   display: flex;
+   
+   border-radius: 15px;
+   
+} */
+
+.main__consoles div:first-child {
+   margin-left: 0;
+   /* border: 1px solid dodgerblue; */
+}
+/* .main__consoles div:nth-child(2) {
+   border: 1px solid green;
+} */
+.main__consoles div:nth-child(3) {
+   margin-right: 0;
+}
+
+.console__names {
+   display: flex;
+   /* display: none; */
+   width: 100%;
+   
+   & div {
+      width: 100%;
+      max-width: 453.3px;
+     /*  margin-inline: 20px; */
+      border-radius: 10px;
+   }
+   & div:first-child {
+      margin-left: 0;
+   }
+  /*  & div:nth-child(3) {
+      margin-right: 0;
+   } */
+   & h2 {
+      font-weight: lighter;
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+      @media screen and (max-width: 1050px) {
+         font-size: 1rem;
+      }
+     /*  @media screen and (max-width: 900px) {
+         font-size: 0.5rem;
+      } */
+      /* @media screen and (max-width: 600px) {
+         font-size: 1rem;
+      } */
+   }
+}
+
+.console__title {
+   display: flex;
+   /* display: none; */
+   width: 100%;
+   & div {
+      width: 100%;
+      max-width: 453.3px;
+      margin-inline: 20px;
+   }
+   & div:first-child {
+      margin-left: 0;
+   }
+   & h2 {
+      font-weight: lighter;
+      font-size: 1.2rem;
+       @media screen and (max-width: 900px) {
+         font-size: 1rem;
+      }
+   }
+}
+/* .console__names div:first-child {
+   margin-left: 0;
+} */

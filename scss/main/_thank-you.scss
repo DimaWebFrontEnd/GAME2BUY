@@ -1,0 +1,16 @@
+.thank__you {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex: 1 1 auto;
+   color: white;
+   &--wrap {
+      padding: 60px;
+      background-color: hsla(0, 0%, 0%, 0.75);
+      border-radius: 15px;
+      & h1 {
+         font-size: 1rem;
+      }
+   }
+}

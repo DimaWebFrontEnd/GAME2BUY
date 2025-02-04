@@ -1,0 +1,27 @@
+main {
+   /* overflow-y: hidden; */
+   margin-top: 90px;
+   width: 100%;
+   max-width: 1440px;
+   height: 100%;
+   min-height: 100vh;
+   padding-inline: 20px;
+   position: relative;
+   background-color: whitesmoke;
+   /* background-color: white; */
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   /*
+   flex: 1 1 auto; */
+   /* 
+      !Media Queries 800px 
+   */
+   @media screen and (max-width: 800px) {
+      margin-top: 70px;
+      padding-inline: 0;
+   }
+   /* @media screen and (max-width: 550px) {
+      padding-inline: 0;
+   } */
+}
